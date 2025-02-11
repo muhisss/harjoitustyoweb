@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Project</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="container">
+    <h1 class="text-center my-4">KUVA GENERAATTORI</h1>
+    <div class="row">
+        <div class="col-md-6 text-center" id="imageContainer">
+            <button id="prevImageBtn" class="btn btn-secondary mb-3">Edellinen kuva</button>
+            <button id="nextImageBtn" class="btn btn-primary mb-3">Seuraava kuva</button>
+            <img id="randomImage" src="https://picsum.photos/500" alt="Random Image" class="img-fluid rounded">
+            <p id="imageIndexDisplay">Kuvan numero: 0</p>
+        </div>
+        <div class="col-md-6">
+            <textarea id="imageNotes" class="form-control mb-3" placeholder="Kirjoita muistiinpanoja kuvasta"></textarea>
+            <button id="saveNotesBtn" class="btn btn-success mb-3">Tallenna muistiinpanot</button>
+            <button id="selectAllNotesBtn" class="btn btn-info mb-3">Valitse kaikki</button>
+            <button id="deleteSelectedNotesBtn" class="btn btn-danger mb-3">Poista valitut muistiinpanot</button>
+            <div id="savedNotes" class="mt-3"></div>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
